@@ -1,5 +1,7 @@
 # urdu-nlp-tools
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/awais-akhtar/Urdu-Sentiment/blob/main/urdu_sentiments.ipynb)
+
 Practical Python utilities for Urdu and Roman Urdu NLP: normalization, preprocessing, transliteration, lightweight augmentation, classification metrics, and sentiment analysis.
 
 The default sentiment analyzer is dependency-free and works immediately with a small Urdu/Roman Urdu lexicon. For real research or production work, train it on your own labeled dataset with the optional scikit-learn extra.
