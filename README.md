@@ -101,12 +101,7 @@ urdu_nlp/
 
 ## Publishing
 
-This repository includes a GitHub Actions workflow at `.github/workflows/publish.yml`.
-
-1. Add `PYPI_API_TOKEN` as a GitHub repository secret.
-2. Create a GitHub release or run the workflow manually.
-3. The workflow runs tests, builds the wheel/sdist, and publishes to PyPI.
-
-## Security and Data
-
-Secrets, database files, trained model artifacts, notebooks, generated UI assets, and legacy Django files are excluded from git and from package builds. Keep dataset and model licenses separate from this package, especially when training on third-party corpora or Hugging Face models.
+Publishing is automated with GitHub Actions. Add a repository secret named
+`PYPI_API_TOKEN`, then create a GitHub release. The workflow runs the test
+suite, builds the wheel and source distribution, and publishes both to PyPI.
+It can also be started manually from the Actions tab.
