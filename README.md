@@ -98,10 +98,3 @@ urdu_nlp/
 ├── preprocessing.py
 └── metrics.py
 ```
-
-## Publishing
-
-Publishing is automated with GitHub Actions. Add a repository secret named
-`PYPI_API_TOKEN`, then create a GitHub release. The workflow runs the test
-suite, builds the wheel and source distribution, and publishes both to PyPI.
-It can also be started manually from the Actions tab.
