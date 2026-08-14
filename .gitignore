@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Local environments and credentials
+.env
+.venv/
+env/
+venv/
+
+# Databases, logs, and model artifacts
+*.db
+*.sqlite3
+*.log
+*.sav
+*.h5
+*.pkl
+*.pickle
+
+# Legacy Django/UI project files excluded from the package repo
+app/
+authentication/
+core/
+static/
+staticfiles/
+modelsfrom hugging/
+manage.py
+a.py
+aa.py
+cs.py
+testmodel.py
+urdu_sentiments.ipynb
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+package-lock.json

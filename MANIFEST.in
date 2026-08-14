@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include urdu_nlp py.typed
+global-exclude __pycache__
+global-exclude *.py[cod]

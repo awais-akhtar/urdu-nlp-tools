@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urdu-nlp-tools"
+version = "0.1.0"
+description = "Normalization, preprocessing, transliteration, augmentation, metrics, and sentiment tools for Urdu and Roman Urdu NLP."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+  {name = "Awais Akhtar"}
+]
+keywords = ["urdu", "nlp", "sentiment-analysis", "roman-urdu", "low-resource-nlp"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Natural Language :: Urdu",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.optional-dependencies]
+train = [
+  "scikit-learn>=1.0",
+]
+dev = [
+  "build>=1.0",
+  "pytest>=7",
+  "twine>=5",
+]
+
+[project.urls]
+Homepage = "https://github.com/awais-akhtar/urdu-nlp-tools"
+Repository = "https://github.com/awais-akhtar/urdu-nlp-tools"
+Issues = "https://github.com/awais-akhtar/urdu-nlp-tools/issues"
+
+[project.scripts]
+urdu-nlp-sentiment = "urdu_nlp.sentiment:main"
+
+[tool.setuptools.packages.find]
+include = ["urdu_nlp*"]
+
+[tool.setuptools.package-data]
+urdu_nlp = ["py.typed"]
