@@ -1,4 +1,3 @@
-"""Lightweight Urdu and Roman Urdu transliteration helpers."""
 
 from __future__ import annotations
 

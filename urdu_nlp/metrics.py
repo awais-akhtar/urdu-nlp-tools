@@ -1,4 +1,3 @@
-"""Pure-Python metrics for sentiment classification."""
 
 from __future__ import annotations
 

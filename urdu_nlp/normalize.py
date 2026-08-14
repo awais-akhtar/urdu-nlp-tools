@@ -1,4 +1,3 @@
-"""Normalization helpers for Urdu text."""
 
 from __future__ import annotations
 

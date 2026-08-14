@@ -1,4 +1,3 @@
-"""Sentiment analysis for Urdu and Roman Urdu text."""
 
 from __future__ import annotations
 
